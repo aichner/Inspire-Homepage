@@ -19,6 +19,9 @@ import {
   MDBCardText,
 } from "mdbreact";
 
+//Parallax
+import { ParallaxProvider } from "react-scroll-parallax";
+
 //> Images
 // Logo of MDB React
 import MDBLogo from "../../../assets/mdb-react-small.png";
@@ -29,6 +32,9 @@ import Projects from "../../../assets/content/projects.jpg";
 
 //> CSS
 import "./HomePage.scss";
+
+//> Components
+import { CallToAction, Hero, Reviews } from "../../organisms/sections";
 //#endregion
 
 //#region > Components
@@ -136,6 +142,12 @@ class HomePage extends React.Component {
                   </MDBCol>
                 </MDBRow>
               </MDBCol>
+            </MDBRow>
+            <MDBRow>
+              <ParallaxProvider>
+                <CallToAction />
+              </ParallaxProvider>
+              <Reviews />
             </MDBRow>
           </MDBContainer>
         </div>
