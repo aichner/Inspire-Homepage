@@ -81,5 +81,5 @@ export default Reviews;
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2019-2020 InspireMedia GmbH
+ * Copyright © 2020 InspireMedia GmbH
  */
