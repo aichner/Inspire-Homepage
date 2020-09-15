@@ -18,7 +18,7 @@ import {
   MDBRating,
 } from "mdbreact";
 
-//> CSS
+//> Style
 import "./reviews.scss";
 
 //> Data
@@ -102,5 +102,5 @@ export default Reviews;
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2019-2020 Werbeagentur Christian Aichner
+ * Copyright © 2019-2020 InspireMedia GmbH
  */

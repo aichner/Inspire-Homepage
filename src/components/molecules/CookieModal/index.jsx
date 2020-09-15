@@ -16,7 +16,7 @@ import {
   MDBInput,
 } from "mdbreact";
 
-//> CSS
+//> Style
 import "./cookie.scss";
 //#endregion
 
@@ -142,5 +142,5 @@ export default ModalPage;
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */

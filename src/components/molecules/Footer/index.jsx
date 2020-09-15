@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 // "Material Design for Bootstrap" is a great UI design framework
 import { MDBFooter, MDBRow, MDBCol, MDBContainer, MDBIcon } from "mdbreact";
 
-//> CSS
+//> Style
 import "./footer.scss";
 
 //> Images
@@ -126,5 +126,5 @@ export default Footer;
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */

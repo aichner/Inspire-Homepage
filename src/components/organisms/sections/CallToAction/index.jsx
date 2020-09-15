@@ -25,7 +25,7 @@ import {
 import rocket from "../../../../assets/content/icons/rocket.png";
 import planet from "../../../../assets/content/icons/planet.png";
 
-//> CSS
+//> Style
 import "./callToAction.scss";
 
 class CallToAction extends React.Component {
@@ -65,7 +65,7 @@ class CallToAction extends React.Component {
               to="/analysis"
               onClick={() => googleAnalytics.registerAnalysisButton()}
             >
-              <MDBBtn color="agency-red" size="lg">
+              <MDBBtn color="blue" size="lg">
                 <MDBIcon icon="rocket" className="pr-2" />
                 Jetzt starten
               </MDBBtn>
@@ -97,5 +97,5 @@ export default CallToAction;
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2019-2020 Werbeagentur Christian Aichner
+ * Copyright © 2019-2020 InspireMedia GmbH
  */

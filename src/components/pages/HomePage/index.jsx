@@ -30,7 +30,7 @@ import AgencyLogo from "../../../assets/agency-small.png";
 // Image of someone coding
 import Projects from "../../../assets/content/projects.jpg";
 
-//> CSS
+//> Style
 import "./HomePage.scss";
 
 //> Components
@@ -58,5 +58,5 @@ export default HomePage;
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */

@@ -16,7 +16,7 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 // "Material Design for Bootstrap" is a great UI design framework
 import "mdbreact/dist/css/mdb.css";
 
-//> CSS
+//> Style
 // Root SCSS file
 import "./index.scss";
 
@@ -97,5 +97,5 @@ store.firebaseAuthIsReady.then(() => {
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */

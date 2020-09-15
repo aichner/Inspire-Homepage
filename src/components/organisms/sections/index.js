@@ -6,5 +6,5 @@ import Reviews from "./Reviews";
 export { CallToAction, Reviews };
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */
