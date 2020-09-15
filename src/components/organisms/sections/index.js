@@ -1,12 +1,9 @@
-//#region > Imports
+//> Components
 // Import all components to export them for easy access from parent components
-//import Foo from "./Foo";
-//#endregion
+import CallToAction from "./CallToAction";
+import Reviews from "./Reviews";
 
-//#region > Exports
-//export { Foo };
-//#endregion
-
+export { CallToAction, Reviews };
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
  * Copyright © 2020 InspireMedia GmbH

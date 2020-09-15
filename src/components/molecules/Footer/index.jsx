@@ -9,11 +9,12 @@ import { Link } from "react-router-dom";
 // "Material Design for Bootstrap" is a great UI design framework
 import { MDBFooter, MDBRow, MDBCol, MDBContainer, MDBIcon } from "mdbreact";
 
-//> CSS
+//> Style
 import "./footer.scss";
 
 //> Images
-import logoImg from "../../../assets/agency-small.png";
+// InspireMedia Logo
+import { ReactComponent as Logo } from "../../../assets/logo.svg";
 //#endregion
 
 //#region > Components
@@ -51,7 +52,9 @@ class Footer extends React.Component {
               </Link>
             </MDBCol>
             <MDBCol md="2" className="my-3 text-center">
-              <img src={logoImg} alt="Logo" className="img-fluid" />
+              <Link to="/">
+                <Logo className="img-fluid" />
+              </Link>
             </MDBCol>
             <MDBCol md="3" className="text-center">
               <Link to="contact">
@@ -63,24 +66,14 @@ class Footer extends React.Component {
         <div className="footer-copyright text-center py-3">
           <MDBContainer fluid>
             <div>
-              &copy; {new Date().getFullYear()} Copyright: Werbeagentur
-              Christian Aichner
+              &copy; {new Date().getFullYear()} Copyright: InspireMedia GmbH
               <p className="my-2 font-weight-bold">
                 Made with
                 <i
                   className="fas fa-heart pulse red-text ml-1 mr-1"
                   aria-hidden="true"
                 ></i>
-                by
-                <a
-                  href="https://www.aichner-christian.com"
-                  target="_blank"
-                  className="ml-1"
-                  rel="noopener noreferrer"
-                >
-                  us
-                </a>
-                .
+                by <Link to="/">us</Link>.
               </p>
             </div>
             <div>
@@ -94,7 +87,7 @@ class Footer extends React.Component {
                 )}
                 <span className="pl-2 pr-2">·</span>
                 <a
-                  href="https://github.com/aichner/Gutschein2Go"
+                  href="https://github.com/aichner/Inspire-Homepage"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -103,7 +96,7 @@ class Footer extends React.Component {
                 </a>
                 <span className="pl-2 pr-2">·</span>
                 <a
-                  href="https://github.com/aichner/Gutschein2Go/issues/new?template=bug_report.md"
+                  href="https://github.com/aichner/Inspire-Homepage/issues/new?template=bug_report.md"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -126,5 +119,5 @@ export default Footer;
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */

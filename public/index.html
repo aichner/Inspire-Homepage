@@ -1,19 +1,22 @@
 <!--
   SPDX-License-Identifier: (EUPL-1.2)
-  Copyright © 2020 Werbeagentur Christian Aichner
+  Copyright © 2020 InspireMedia GmbH
 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!--
       We suggest using https://www.favicon-generator.org/ to generate your custom favicon.
       Create a new folder in public named "fav" and copy all extracted files of favicon-generator.org to it.
       Include the files using the provided code snippet by favicon-generator.org - do not forget to adjust the paths 
       using the %PUBLIC_URL% as base.
     -->
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -23,11 +26,40 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React + MDB by Christian Aichner</title>
+    <title>InspireMedia GmbH</title>
+    <style>
+      noscript {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 1.5rem;
+        background: #ededed;
+        font-family: "Roboto", "Fira-Sans", "Times New Roman", Times, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem 0 1rem;
+      }
+      noscript p {
+        text-align: center;
+        color: #7f7f7f;
+      }
+      noscript img {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        max-height: 150px;
+      }
+    </style>
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
+    <noscript
+      ><div className="noscript">
+        <img src="./logo.svg" alt="InspireMedia Logo" />
+        <p>Bitte aktivieren Sie JavaScript um fortzufahren.</p>
+      </div>
     </noscript>
     <div id="root"></div>
     <!--
