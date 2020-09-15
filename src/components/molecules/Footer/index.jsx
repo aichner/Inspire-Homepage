@@ -73,16 +73,7 @@ class Footer extends React.Component {
                   className="fas fa-heart pulse red-text ml-1 mr-1"
                   aria-hidden="true"
                 ></i>
-                by
-                <a
-                  href="https://www.inspiremedia.at"
-                  target="_blank"
-                  className="ml-1"
-                  rel="noopener noreferrer"
-                >
-                  us
-                </a>
-                .
+                by <Link to="/">us</Link>.
               </p>
             </div>
             <div>
