@@ -71,27 +71,6 @@ class Reviews extends React.Component {
               );
             })}
           </MDBRow>
-          <p className="lead mt-5 mb-3">Teile Deine Erfahrung mit uns</p>
-          <MDBRating
-            feedback
-            className="text-center"
-            getValue={(rating) => {
-              ReactGA.event({
-                category: "Rating",
-                action: "Rating set",
-                label: rating.title + " - " + rating.value,
-              });
-            }}
-            submitHandler={(event, title, rating, msg) => {
-              event.preventDefault();
-
-              ReactGA.event({
-                category: "Rating",
-                action: "Rating message set",
-                label: title + " - " + msg,
-              });
-            }}
-          />
         </MDBContainer>
       </section>
     );
