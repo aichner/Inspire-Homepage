@@ -17,7 +17,7 @@ import {
 } from "mdbreact";
 
 //> Images
-// React Logo
+// InspireMedia Logo
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
 
 //> Style
