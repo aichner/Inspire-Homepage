@@ -42,6 +42,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <>
+        <Hero />
         <ParallaxProvider>
           <CallToAction />
         </ParallaxProvider>
