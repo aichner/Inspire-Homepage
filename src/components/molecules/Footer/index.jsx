@@ -13,7 +13,8 @@ import { MDBFooter, MDBRow, MDBCol, MDBContainer, MDBIcon } from "mdbreact";
 import "./footer.scss";
 
 //> Images
-import logoImg from "../../../assets/agency-small.png";
+// InspireMedia Logo
+import { ReactComponent as Logo } from "../../../assets/logo.svg";
 //#endregion
 
 //#region > Components
@@ -51,7 +52,9 @@ class Footer extends React.Component {
               </Link>
             </MDBCol>
             <MDBCol md="2" className="my-3 text-center">
-              <img src={logoImg} alt="Logo" className="img-fluid" />
+              <Link to="/">
+                <Logo className="img-fluid" />
+              </Link>
             </MDBCol>
             <MDBCol md="3" className="text-center">
               <Link to="contact">
@@ -63,8 +66,7 @@ class Footer extends React.Component {
         <div className="footer-copyright text-center py-3">
           <MDBContainer fluid>
             <div>
-              &copy; {new Date().getFullYear()} Copyright: Werbeagentur
-              Christian Aichner
+              &copy; {new Date().getFullYear()} Copyright: InspireMedia GmbH
               <p className="my-2 font-weight-bold">
                 Made with
                 <i
@@ -73,7 +75,7 @@ class Footer extends React.Component {
                 ></i>
                 by
                 <a
-                  href="https://www.aichner-christian.com"
+                  href="https://www.inspiremedia.at"
                   target="_blank"
                   className="ml-1"
                   rel="noopener noreferrer"
@@ -94,7 +96,7 @@ class Footer extends React.Component {
                 )}
                 <span className="pl-2 pr-2">·</span>
                 <a
-                  href="https://github.com/aichner/Gutschein2Go"
+                  href="https://github.com/aichner/Inspire-Homepage"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -103,7 +105,7 @@ class Footer extends React.Component {
                 </a>
                 <span className="pl-2 pr-2">·</span>
                 <a
-                  href="https://github.com/aichner/Gutschein2Go/issues/new?template=bug_report.md"
+                  href="https://github.com/aichner/Inspire-Homepage/issues/new?template=bug_report.md"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
