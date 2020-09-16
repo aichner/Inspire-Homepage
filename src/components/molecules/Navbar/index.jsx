@@ -120,7 +120,7 @@ class Navbar extends React.Component {
                 <MDBNavItem>
                   <a
                     href="mailto:office@inspiremedia.at"
-                    className="text-dark px-2"
+                    className="text-dark p-2"
                   >
                     <strong>Kontakt</strong>
                   </a>
