@@ -15,11 +15,13 @@ import {
   MDBContainer,
   MDBIcon,
   MDBSmoothScroll,
+  MDBBadge,
 } from "mdbreact";
 
 //> Images
 // Working svg
 import { ReactComponent as Working } from "../../../../assets/content/hero/working.svg";
+import { ReactComponent as Marketing } from "../../../../assets/content/hero/marketing.svg";
 
 //> CSS
 import "./hero.scss";
@@ -66,7 +68,7 @@ class Hero extends React.Component {
         </MDBContainer>
         <div className="top-mobile-bg d-block d-sm-none py-3 px-2 text-center">
           <p className="lead font-weight-bold mb-1">
-            Was taugt Deine Online-Präsenz?
+            Jetzt Digitalisierungsbonus sichern!
           </p>
           <p className="text-muted">
             Unsere kostenlose Analyse zeigt Dir, welches Potential Deine Online
@@ -90,22 +92,31 @@ class Hero extends React.Component {
           <MDBContainer>
             <MDBRow className="h-100">
               <MDBCol md="3" className="p-0">
-                <p>Chart</p>
+                <Marketing className="img-fluid w-75" />
               </MDBCol>
               <MDBCol md="7" className="p-0">
-                <h3>Was taugt Deine Online-Präsenz?</h3>
+                <h3>
+                  Jetzt <strong>Inspire Digitalisierungsbonus</strong> sichern!
+                </h3>
                 <p className="lead">
-                  Unsere <strong>kostenlose</strong> Analyse zeigt Dir den
-                  aktuellen Stand Deiner gesamten Online-Präsenz und liefert Dir
-                  individuelle und unkomplizierte Lösungen.
+                  Egal ob neue{" "}
+                  <strong>
+                    Webseite, Webshop, Leadkampagne, Social Network Marketing
+                    oder Videoproduktion
+                  </strong>
+                  , wir geben Dir{" "}
+                  <span className="h4-responsive">
+                    <MDBBadge color="success">10% Rabatt</MDBBadge>
+                  </span>{" "}
+                  auf unsere erste Kooperation.
                 </p>
                 <Link
-                  to="/analysis"
+                  to="/services"
                   onClick={() => googleAnalytics.registerAnalysisButton()}
                 >
-                  <MDBBtn size="lg" color="agency-red" className="btn-start">
+                  <MDBBtn size="lg" color="blue" className="btn-start">
                     <MDBIcon icon="rocket" className="pr-2" />
-                    JETZT kostenlos herausfinden
+                    Leistungen entdecken
                   </MDBBtn>
                 </Link>
               </MDBCol>
