@@ -2,6 +2,8 @@
 //> React
 // Contains all the functionality necessary to define React components
 import React from "react";
+// Router bindings
+import { withRouter, Link } from "react-router-dom";
 
 //> MDB
 // "Material Design for Bootstrap" is a great UI design framework
@@ -14,6 +16,7 @@ import {
   MDBNavItem,
   MDBNavLink,
   MDBContainer,
+  MDBSmoothScroll,
 } from "mdbreact";
 
 //> Images
@@ -49,6 +52,8 @@ class Navbar extends React.Component {
         onClick={this.toggleCollapse("mainNavbarCollapse")}
       />
     );
+
+    const { location } = this.props;
     const { collapseID } = this.state;
 
     return (
@@ -66,42 +71,59 @@ class Navbar extends React.Component {
               isOpen={this.state.collapseID}
               navbar
             >
-              <MDBNavbarNav right>
+              <MDBNavbarNav right className="d-flex align-items-center">
                 <MDBNavItem>
-                  <MDBNavLink
-                    exact
-                    to="/"
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
-                  >
-                    <strong>Home</strong>
-                  </MDBNavLink>
+                  {location.pathname === "/" ? (
+                    <MDBSmoothScroll to="hero" active>
+                      <strong>Home</strong>
+                    </MDBSmoothScroll>
+                  ) : (
+                    <MDBNavLink
+                      exact
+                      to="/"
+                      onClick={this.closeCollapse("mainNavbarCollapse")}
+                    >
+                      <strong>Home</strong>
+                    </MDBNavLink>
+                  )}
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink
-                    exact
-                    to="/"
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
-                  >
-                    <strong>Leistungen</strong>
-                  </MDBNavLink>
+                  {location.pathname === "/" ? (
+                    <MDBSmoothScroll to="services" active>
+                      <strong>Leistungen</strong>
+                    </MDBSmoothScroll>
+                  ) : (
+                    <MDBNavLink
+                      exact
+                      to="/"
+                      onClick={this.closeCollapse("mainNavbarCollapse")}
+                    >
+                      <strong>Leistungen</strong>
+                    </MDBNavLink>
+                  )}
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink
-                    exact
-                    to="/"
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
-                  >
-                    <strong>Referenzen</strong>
-                  </MDBNavLink>
+                  {location.pathname === "/" ? (
+                    <MDBSmoothScroll to="references" active>
+                      <strong>Referenzen</strong>
+                    </MDBSmoothScroll>
+                  ) : (
+                    <MDBNavLink
+                      exact
+                      to="/"
+                      onClick={this.closeCollapse("mainNavbarCollapse")}
+                    >
+                      <strong>Referenzen</strong>
+                    </MDBNavLink>
+                  )}
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink
-                    exact
-                    to="/"
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
+                  <a
+                    href="mailto:info@inspiremedia.at"
+                    className="text-dark px-2"
                   >
                     <strong>Kontakt</strong>
-                  </MDBNavLink>
+                  </a>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>
@@ -115,7 +137,7 @@ class Navbar extends React.Component {
 //#endregion
 
 //#region > Exports
-export default Navbar;
+export default withRouter(Navbar);
 //#endregion
 
 /**
