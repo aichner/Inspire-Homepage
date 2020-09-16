@@ -91,7 +91,16 @@ class Navbar extends React.Component {
                     to="/"
                     onClick={this.closeCollapse("mainNavbarCollapse")}
                   >
-                    <strong>Pakete</strong>
+                    <strong>Referenzen</strong>
+                  </MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                  <MDBNavLink
+                    exact
+                    to="/"
+                    onClick={this.closeCollapse("mainNavbarCollapse")}
+                  >
+                    <strong>Kontakt</strong>
                   </MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
