@@ -76,7 +76,7 @@ class Hero extends React.Component {
               Webseite, Webshop, Leadkampagne, Social Network Marketing oder
               Videoproduktion
             </strong>
-            , wir freuen uns auf unsere Zusammenarbeit.
+            , wir freuen uns auf eine tolle Zusammenarbeit.
           </p>
           <MDBSmoothScroll to="services">
             <MDBBtn size="lg" color="blue" className="btn-start">
@@ -105,7 +105,7 @@ class Hero extends React.Component {
                     Webseite, Webshop, Leadkampagne, Social Network Marketing
                     oder Videoproduktion
                   </strong>
-                  , wir freuen uns auf unsere Zusammenarbeit.
+                  , wir freuen uns auf eine tolle Zusammenarbeit.
                 </p>
                 <MDBSmoothScroll to="services">
                   <MDBBtn size="lg" color="blue" className="btn-start">

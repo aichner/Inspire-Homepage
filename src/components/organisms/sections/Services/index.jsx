@@ -45,7 +45,9 @@ class Services extends React.PureComponent {
                     <h4 className="font-weight-bold mt-3">{service.title}</h4>
                     <p className="lead">{service.lead}</p>
                     <p>{service.text}</p>
-                    <MDBBtn color="blue">Anfragen</MDBBtn>
+                    <MDBBtn color="blue" href="mailto:info@inspiremedia.at">
+                      Anfragen
+                    </MDBBtn>
                   </div>
                 </MDBCol>
               );

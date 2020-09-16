@@ -234,26 +234,20 @@ class Footer extends React.PureComponent {
             </MDBCol>
             <MDBCol md="12" className="text-center my-5">
               <h4>{this.state.slogan}</h4>
-              {location.pathname === "/" ? (
-                <MDBSmoothScroll to="contactForm">
-                  <MDBBtn size="lg" color="blue">
-                    Kontakt
-                  </MDBBtn>
-                </MDBSmoothScroll>
-              ) : (
-                <Link to="/">
-                  <MDBBtn size="lg" color="blue">
-                    Kontakt
-                  </MDBBtn>
-                </Link>
-              )}
+              <MDBBtn
+                size="lg"
+                color="blue"
+                href="mailto:info@inspiremedia.at"
+                className="text-white"
+              >
+                Kontakt
+              </MDBBtn>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
         <div className="footer-copyright text-center py-3">
           <MDBContainer fluid>
-            &copy; 2017 - {new Date().getFullYear()} Copyright: InspireMedia
-            GmbH
+            &copy; {new Date().getFullYear()} Copyright: InspireMedia GmbH
             <div>
               <small className="text-muted">
                 Stable release
