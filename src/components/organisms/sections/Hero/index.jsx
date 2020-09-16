@@ -42,7 +42,7 @@ class Hero extends React.Component {
           <MDBView className="hero-view">
             <MDBRow className="flex-center d-flex d-sm-none pt-5 mt-3">
               <MDBCol md="6" className="text-center">
-                <p>Chart</p>
+                <Marketing className="img-fluid w-75" />
                 <h1 className="mt-3 font-weight-bold pb-4">
                   Deine Vision ist unser Auftrag
                 </h1>
@@ -68,21 +68,22 @@ class Hero extends React.Component {
         </MDBContainer>
         <div className="top-mobile-bg d-block d-sm-none py-3 px-2 text-center">
           <p className="lead font-weight-bold mb-1">
-            Jetzt Digitalisierungsbonus sichern!
+            Jetzt <strong>Vorteile</strong> entdecken!
           </p>
           <p className="text-muted">
-            Unsere kostenlose Analyse zeigt Dir, welches Potential Deine Online
-            Präsenz besitzt und was Du davon nutzt.
+            Egal ob neue{" "}
+            <strong>
+              Webseite, Webshop, Leadkampagne, Social Network Marketing oder
+              Videoproduktion
+            </strong>
+            , wir freuen uns auf unsere Zusammenarbeit.
           </p>
-          <Link
-            to="/analysis"
-            onClick={() => googleAnalytics.registerAnalysisButton()}
-          >
+          <MDBSmoothScroll to="services">
             <MDBBtn size="lg" color="blue" className="btn-start">
               <MDBIcon icon="rocket" className="pr-2" />
-              JETZT herausfinden
+              Leistungen entdecken
             </MDBBtn>
-          </Link>
+          </MDBSmoothScroll>
         </div>
         <MDBContainer
           fluid
@@ -96,7 +97,7 @@ class Hero extends React.Component {
               </MDBCol>
               <MDBCol md="7" className="p-0">
                 <h3>
-                  Jetzt <strong>Inspire Digitalisierungsbonus</strong> sichern!
+                  Jetzt <strong>Vorteile</strong> entdecken!
                 </h3>
                 <p className="lead">
                   Egal ob neue{" "}
@@ -104,21 +105,14 @@ class Hero extends React.Component {
                     Webseite, Webshop, Leadkampagne, Social Network Marketing
                     oder Videoproduktion
                   </strong>
-                  , wir geben Dir{" "}
-                  <span className="h4-responsive">
-                    <MDBBadge color="success">10% Rabatt</MDBBadge>
-                  </span>{" "}
-                  auf unsere erste Kooperation.
+                  , wir freuen uns auf unsere Zusammenarbeit.
                 </p>
-                <Link
-                  to="/services"
-                  onClick={() => googleAnalytics.registerAnalysisButton()}
-                >
+                <MDBSmoothScroll to="services">
                   <MDBBtn size="lg" color="blue" className="btn-start">
                     <MDBIcon icon="rocket" className="pr-2" />
                     Leistungen entdecken
                   </MDBBtn>
-                </Link>
+                </MDBSmoothScroll>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
