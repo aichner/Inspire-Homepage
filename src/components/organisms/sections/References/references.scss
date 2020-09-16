@@ -4,6 +4,16 @@
   img {
     max-height: 100px;
   }
+
+  @media only screen and (max-width: 600px) {
+    .col-lg-2 {
+      padding: 0.2rem !important;
+    }
+
+    img {
+      max-height: 50px;
+    }
+  }
 }
 
 /**

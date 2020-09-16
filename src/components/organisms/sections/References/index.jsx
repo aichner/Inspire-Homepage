@@ -54,7 +54,7 @@ class References extends React.PureComponent {
           <MDBRow className="flex-center">
             {data.map((item, i) => {
               return (
-                <MDBCol sm="2" className="p-3" key={i}>
+                <MDBCol xs="6" sm="6" md="3" lg="2" className="p-3" key={i}>
                   <img src={item.src} alt={item.alt} className="img-fluid" />
                 </MDBCol>
               );
