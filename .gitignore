@@ -13,6 +13,9 @@ package-lock.json
 # MDB
 mdb*
 
+# Copyrighted images
+/src/assets/content/trusted
+
 # Firebase configuration
 src/config/fbConfig.js
 
