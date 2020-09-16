@@ -15,6 +15,7 @@ mdb*
 
 # Copyrighted images
 /src/assets/content/trusted
+/src/assets/content/examples
 
 # Firebase configuration
 src/config/fbConfig.js

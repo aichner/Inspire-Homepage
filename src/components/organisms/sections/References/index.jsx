@@ -20,6 +20,8 @@ import gasserPartnerIMG from "../../../../assets/content/trusted/gasser+partner.
 import snekIMG from "../../../../assets/content/trusted/snek.png";
 import psvIMG from "../../../../assets/content/trusted/psv.png";
 import e4yIMG from "../../../../assets/content/trusted/e4y.png";
+import sithcultIMG from "../../../../assets/content/trusted/sithcult.png";
+import healthtraceIMG from "../../../../assets/content/trusted/healthtrace.png";
 
 //> Data
 const data = [
@@ -33,6 +35,8 @@ const data = [
   { src: rauchIMG, alt: "Andreas Rauch" },
   { src: kelagIMG, alt: "KELAG" },
   { src: bluelupiIMG, alt: "Blue Lupi" },
+  { src: sithcultIMG, alt: "SithCult" },
+  { src: healthtraceIMG, alt: "HealthTrace" },
 ];
 
 class References extends React.PureComponent {

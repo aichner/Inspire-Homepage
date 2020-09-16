@@ -1,0 +1,29 @@
+#examples {
+  background: #e7e7e7;
+
+  .carousel-inner {
+    .brand {
+      max-height: 40px;
+    }
+
+    .is-reppling {
+      display: none;
+    }
+
+    .mask {
+      cursor: default;
+    }
+
+    .techs {
+      img {
+        max-height: 25px;
+        margin: 0 0.1rem;
+      }
+    }
+  }
+}
+
+/**
+ * SPDX-License-Identifier: (EUPL-1.2)
+ * Copyright © 2020 InspireMedia GmbH
+ */
