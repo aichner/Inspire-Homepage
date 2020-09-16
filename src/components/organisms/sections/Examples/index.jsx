@@ -98,7 +98,8 @@ const data = [
     type: "web",
     logo: pharmaziegasseIMG,
     head: pharmaziegasseEx,
-    description: "Website mit CMS + User Registrierung",
+    description:
+      "Professionelle und moderne Website mit Content-Management-System, User Registrierung und Leadeinbindung.",
     technologies: [
       "react",
       "javascript",
