@@ -61,7 +61,7 @@ class CallToAction extends React.Component {
               Es ist einfach, <strong>jetzt</strong> zu starten!
             </h2>
             <p>Und der Einstieg und die Erstberatung sind kostenlos.</p>
-            <MDBBtn color="blue" size="lg" href="mailto:info@inspiremedia.at">
+            <MDBBtn color="blue" size="lg" href="mailto:office@inspiremedia.at">
               <MDBIcon icon="rocket" className="pr-2" />
               Jetzt starten
             </MDBBtn>

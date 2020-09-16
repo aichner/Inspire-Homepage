@@ -40,7 +40,7 @@ class MessagePage extends React.Component {
               <MDBBtn
                 color="blue"
                 size="md"
-                href={`mailto:info@inspiremedia.at`}
+                href={`mailto:office@inspiremedia.at`}
                 className="mx-0"
               >
                 <MDBIcon far icon="envelope" />
@@ -172,7 +172,7 @@ class MessagePage extends React.Component {
               <MDBBtn
                 color="blue"
                 size="md"
-                href={`mailto:info@inspiremedia.at`}
+                href={`mailto:office@inspiremedia.at`}
               >
                 <MDBIcon far icon="envelope" />
                 Kontakt

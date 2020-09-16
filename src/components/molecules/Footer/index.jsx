@@ -142,7 +142,7 @@ class Footer extends React.PureComponent {
               tag="a"
               floating
               social="email"
-              href="mailto:info@inspiremedia.at"
+              href="mailto:office@inspiremedia.at"
             >
               <MDBIcon far icon="envelope" />
             </MDBBtn>
@@ -208,10 +208,10 @@ class Footer extends React.PureComponent {
               <h5 className="title">Kontakt</h5>
               <hr className="blue mb-4 mt-0 d-inline-block" />
               <ul>
-                <a href="mailto:info@inspiremedia.at">
+                <a href="mailto:office@inspiremedia.at">
                   <li className="list-unstyled">
                     <MDBIcon far icon="envelope" />
-                    info@inspiremedia.at
+                    office@inspiremedia.at
                   </li>
                 </a>
                 <a href="tel:004368120502754">
@@ -237,7 +237,7 @@ class Footer extends React.PureComponent {
               <MDBBtn
                 size="lg"
                 color="blue"
-                href="mailto:info@inspiremedia.at"
+                href="mailto:office@inspiremedia.at"
                 className="text-white"
               >
                 Kontakt
