@@ -118,7 +118,7 @@ class ModalPage extends React.Component {
           </div>
           <MDBRow className="justify-content-center align-items-center">
             <MDBCol md="6">
-              <MDBBtn color="success" onClick={() => this.checkAll()}>
+              <MDBBtn color="blue" onClick={() => this.checkAll()}>
                 <MDBIcon icon="check-circle" />
                 Accept all
               </MDBBtn>
