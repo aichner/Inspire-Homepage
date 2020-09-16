@@ -17,8 +17,10 @@ mdb*
 /src/assets/content/trusted
 /src/assets/content/examples
 
-# Firebase configuration
+# Firebase
 src/config/fbConfig.js
+.firebase
+.firebaserc
 
 # Environment variables
 .env
