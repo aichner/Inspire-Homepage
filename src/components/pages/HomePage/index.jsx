@@ -55,8 +55,8 @@ class HomePage extends React.Component {
         <ParallaxProvider>
           <CallToAction />
         </ParallaxProvider>
-        <Examples />
         <Reviews />
+        <Examples />
       </>
     );
   }

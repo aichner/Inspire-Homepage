@@ -78,7 +78,7 @@ class Hero extends React.Component {
             to="/analysis"
             onClick={() => googleAnalytics.registerAnalysisButton()}
           >
-            <MDBBtn size="lg" color="agency-red" className="btn-start">
+            <MDBBtn size="lg" color="blue" className="btn-start">
               <MDBIcon icon="rocket" className="pr-2" />
               JETZT herausfinden
             </MDBBtn>
