@@ -34,7 +34,12 @@ import Projects from "../../../assets/content/projects.jpg";
 import "./HomePage.scss";
 
 //> Components
-import { CallToAction, Hero, Reviews } from "../../organisms/sections";
+import {
+  CallToAction,
+  Hero,
+  Reviews,
+  References,
+} from "../../organisms/sections";
 //#endregion
 
 //#region > Components
@@ -43,6 +48,7 @@ class HomePage extends React.Component {
     return (
       <>
         <Hero />
+        <References />
         <ParallaxProvider>
           <CallToAction />
         </ParallaxProvider>

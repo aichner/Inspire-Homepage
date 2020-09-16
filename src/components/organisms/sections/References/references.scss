@@ -1,0 +1,27 @@
+#references {
+  background: #e7e7e7;
+
+  img {
+    max-height: 100px;
+    transition: all 0.1s ease;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray blur(0.1px);
+    cursor: pointer;
+
+    &:hover {
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      filter: blur(0.1px);
+    }
+  }
+}
+
+/**
+ * SPDX-License-Identifier: (EUPL-1.2)
+ * Copyright © 2020 InspireMedia GmbH
+ */
