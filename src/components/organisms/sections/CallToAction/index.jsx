@@ -61,15 +61,10 @@ class CallToAction extends React.Component {
               Es ist einfach, <strong>jetzt</strong> zu starten!
             </h2>
             <p>Und der Einstieg und die Erstberatung sind kostenlos.</p>
-            <Link
-              to="/analysis"
-              onClick={() => googleAnalytics.registerAnalysisButton()}
-            >
-              <MDBBtn color="blue" size="lg">
-                <MDBIcon icon="rocket" className="pr-2" />
-                Jetzt starten
-              </MDBBtn>
-            </Link>
+            <MDBBtn color="blue" size="lg" href="mailto:office@inspiremedia.at">
+              <MDBIcon icon="rocket" className="pr-2" />
+              Jetzt starten
+            </MDBBtn>
           </MDBCol>
           <MDBCol>
             <MDBRow className="space-right mt-5 mt-sm-0">

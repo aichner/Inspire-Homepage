@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.aichner-christian.com/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.inspiremedia.at/" target="_blank" rel="noopener noreferrer">
     <img src="https://www.aichnerc.at/img/logo/logo_web.png" alt="Agency Logo" height="150">
   </a>
 </p>
@@ -12,6 +12,7 @@
 </p>
 
 ## Table of contents
+
 - [Table of contents](#table-of-contents)
 - [Commits](#commits)
 - [Pull Requests](#pull-requests)

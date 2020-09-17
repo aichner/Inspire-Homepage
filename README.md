@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.aichner-christian.com/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.inspiremedia.at/" target="_blank" rel="noopener noreferrer">
     <img src="https://github.com/aichner/React-MDB-Firebase-Template/blob/master/src/assets/react-mdb-firebase.jpg?raw=true" alt="Agency Logo" height="150" style="max-width: 100%" />
   </a>
 </p>
