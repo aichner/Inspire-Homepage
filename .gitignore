@@ -13,8 +13,14 @@ package-lock.json
 # MDB
 mdb*
 
-# Firebase configuration
+# Copyrighted images
+/src/assets/content/trusted
+/src/assets/content/examples
+
+# Firebase
 src/config/fbConfig.js
+.firebase
+.firebaserc
 
 # Environment variables
 .env
@@ -27,4 +33,4 @@ src/config/fbConfig.js
 *.log*
 
 # SPDX-License-Identifier: (EUPL-1.2)
-# Copyright © 2020 Werbeagentur Christian Aichner
+# Copyright © 2020 InspireMedia GmbH

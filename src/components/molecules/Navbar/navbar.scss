@@ -1,0 +1,21 @@
+@import "../../../utilities/variables";
+
+.navbar {
+  box-shadow: none;
+  border-bottom: 2px white solid;
+
+  &.top-nav-collapse {
+    transition: all 0.3s ease;
+    border-bottom: 2px $blue solid;
+  }
+
+  svg {
+    height: 4rem;
+    margin: 0.5rem 0;
+  }
+}
+
+/**
+ * SPDX-License-Identifier: (EUPL-1.2)
+ * Copyright © 2020 InspireMedia GmbH
+ */

@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.aichner-christian.com/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.inspiremedia.at/" target="_blank" rel="noopener noreferrer">
     <img src="https://github.com/aichner/React-MDB-Firebase-Template/blob/master/src/assets/react-mdb-firebase.jpg?raw=true" alt="Agency Logo" height="150" style="max-width: 100%" />
   </a>
 </p>
@@ -42,7 +42,7 @@
 
 Several quick start options are available:
 
--   Clone the repo: `https://github.com/aichner/React-MDB-Firebase-Template.git`
+- Clone the repo: `https://github.com/aichner/React-MDB-Firebase-Template.git`
 
 ### This project requires the MDB React Pro license and its library
 
@@ -50,20 +50,19 @@ You can eigther:
 
 Purchase MDB React Pro
 
--   Download the zip folder and extract it
--   Move the `mdbreact-X.XX.X.tgz` to the local copy of this repository
+- Download the zip folder and extract it
+- Move the `mdbreact-X.XX.X.tgz` to the local copy of this repository
 
 or use MDB React Free
 
--   Update "mdbreact" in `package.json` to the latest version of MDB (such as 4.19.0)
--   After installing, make sure to exclude all elements that require MDB React Pro
+- Update "mdbreact" in `package.json` to the latest version of MDB (such as 4.19.0)
+- After installing, make sure to exclude all elements that require MDB React Pro
 
 How to start this application?
 
--   Use `npm install` to install all dependencies
--   Start a local copy of the docs site with `npm start`
--   Or build a local copy of the library with `npm run build`
-
+- Use `npm install` to install all dependencies
+- Start a local copy of the docs site with `npm start`
+- Or build a local copy of the library with `npm run build`
 
 ## [](#bug-and-feature-requests)Bugs and feature requests
 
@@ -125,7 +124,7 @@ to [contribute to our project](#contributing).
 ![GitHub repository license](https://img.shields.io/badge/license-EUPL--1.2-blue)
 
 SPDX-License-Identifier: (EUPL-1.2)
-Copyright © 2020 Werbeagentur Christian Aichner
+Copyright © 2020 InspireMedia GmbH
 
 [discord-badge]: https://img.shields.io/badge/Discord-Join%20chat%20%E2%86%92-738bd7.svg
 [discord]: https://discord.gg/dnxUJmk

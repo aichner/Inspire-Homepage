@@ -16,7 +16,7 @@ import {
   MDBInput,
 } from "mdbreact";
 
-//> CSS
+//> Style
 import "./cookie.scss";
 //#endregion
 
@@ -118,7 +118,7 @@ class ModalPage extends React.Component {
           </div>
           <MDBRow className="justify-content-center align-items-center">
             <MDBCol md="6">
-              <MDBBtn color="success" onClick={() => this.checkAll()}>
+              <MDBBtn color="blue" onClick={() => this.checkAll()}>
                 <MDBIcon icon="check-circle" />
                 Accept all
               </MDBBtn>
@@ -142,5 +142,5 @@ export default ModalPage;
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */

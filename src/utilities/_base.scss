@@ -5,88 +5,35 @@
   justify-content: space-between;
 }
 
-// Custom colors
-.bg-dark {
-  background-color: $dark !important;
-  &.darken-1 {
-    background-color: darken($dark, 5%) !important;
-  }
-  &.darken-2 {
-    background-color: darken($dark, 10%) !important;
-  }
-  &.darken-3 {
-    background-color: darken($dark, 15%) !important;
-  }
-  &.lighten-1 {
-    background-color: lighten($dark, 10%) !important;
-  }
-  &.lighten-2 {
-    background-color: lighten($dark, 20%) !important;
-  }
-  &.lighten-3 {
-    background-color: lighten($dark, 30%) !important;
-  }
-}
-.bg-red {
-  background-color: $red !important;
-  &.darken-1 {
-    background-color: darken($red, 10%) !important;
-  }
-  &.darken-2 {
-    background-color: darken($red, 20%) !important;
-  }
-  &.darken-3 {
-    background-color: darken($red, 30%) !important;
-  }
-  &.lighten-1 {
-    background-color: lighten($red, 10%) !important;
-  }
-  &.lighten-2 {
-    background-color: lighten($red, 20%) !important;
-  }
-  &.lighten-3 {
-    background-color: lighten($red, 30%) !important;
-  }
-}
-.bg-green {
-  background-color: $green !important;
-  &.darken-1 {
-    background-color: darken($green, 10%) !important;
-  }
-  &.darken-2 {
-    background-color: darken($green, 20%) !important;
-  }
-  &.darken-3 {
-    background-color: darken($green, 30%) !important;
-  }
-  &.lighten-1 {
-    background-color: lighten($green, 10%) !important;
-  }
-  &.lighten-2 {
-    background-color: lighten($green, 20%) !important;
-  }
-  &.lighten-3 {
-    background-color: lighten($green, 30%) !important;
-  }
-}
-
 // Custom text
 .red-text {
   color: $red !important;
 }
-.pink-text {
-  color: $pink !important;
+
+.blue-text {
+  color: $blue !important;
 }
 
 // Buttons
 .btn {
   box-shadow: none !important;
+
+  &.btn-blue {
+    background: $blue !important;
+
+    &:hover {
+      background: lighten($blue, 5%) !important;
+    }
+  }
+
   &:hover {
     box-shadow: none;
   }
+
   &:active {
     box-shadow: none;
   }
+
   &:focus {
     box-shadow: none;
   }
@@ -111,5 +58,5 @@
 
 /** 
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */

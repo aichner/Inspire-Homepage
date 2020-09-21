@@ -2,6 +2,8 @@
 //> React
 // Contains all the functionality necessary to define React components
 import React from "react";
+// Router bindings
+import { withRouter, Link } from "react-router-dom";
 
 //> MDB
 // "Material Design for Bootstrap" is a great UI design framework
@@ -14,10 +16,15 @@ import {
   MDBNavItem,
   MDBNavLink,
   MDBContainer,
+  MDBSmoothScroll,
 } from "mdbreact";
 
-// React Logo
+//> Images
+// InspireMedia Logo
 import { ReactComponent as Logo } from "../../../assets/logo.svg";
+
+//> Style
+import "./navbar.scss";
 //#endregion
 
 //#region > Components
@@ -45,6 +52,8 @@ class Navbar extends React.Component {
         onClick={this.toggleCollapse("mainNavbarCollapse")}
       />
     );
+
+    const { location } = this.props;
     const { collapseID } = this.state;
 
     return (
@@ -52,10 +61,7 @@ class Navbar extends React.Component {
         <MDBNavbar color="white" light expand="md" fixed="top" scrolling>
           <MDBContainer>
             <MDBNavbarBrand href="/" className="py-0 font-weight-bold">
-              <Logo style={{ height: "2.5rem", width: "2.5rem" }} />
-              <strong className="align-middle">
-                MDB React Firebase Template
-              </strong>
+              <Logo />
             </MDBNavbarBrand>
             <MDBNavbarToggler
               onClick={this.toggleCollapse("mainNavbarCollapse")}
@@ -65,24 +71,59 @@ class Navbar extends React.Component {
               isOpen={this.state.collapseID}
               navbar
             >
-              <MDBNavbarNav right>
+              <MDBNavbarNav right className="d-flex align-items-center">
                 <MDBNavItem>
-                  <MDBNavLink
-                    exact
-                    to="/"
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
-                  >
-                    <strong>Home</strong>
-                  </MDBNavLink>
+                  {location.pathname === "/" ? (
+                    <MDBSmoothScroll to="hero" active>
+                      <strong>Home</strong>
+                    </MDBSmoothScroll>
+                  ) : (
+                    <MDBNavLink
+                      exact
+                      to="/"
+                      onClick={this.closeCollapse("mainNavbarCollapse")}
+                    >
+                      <strong>Home</strong>
+                    </MDBNavLink>
+                  )}
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink
-                    exact
-                    to="/login"
-                    onClick={this.closeCollapse("mainNavbarCollapse")}
+                  {location.pathname === "/" ? (
+                    <MDBSmoothScroll to="services" active>
+                      <strong>Leistungen</strong>
+                    </MDBSmoothScroll>
+                  ) : (
+                    <MDBNavLink
+                      exact
+                      to="/"
+                      onClick={this.closeCollapse("mainNavbarCollapse")}
+                    >
+                      <strong>Leistungen</strong>
+                    </MDBNavLink>
+                  )}
+                </MDBNavItem>
+                <MDBNavItem>
+                  {location.pathname === "/" ? (
+                    <MDBSmoothScroll to="references" active>
+                      <strong>Referenzen</strong>
+                    </MDBSmoothScroll>
+                  ) : (
+                    <MDBNavLink
+                      exact
+                      to="/"
+                      onClick={this.closeCollapse("mainNavbarCollapse")}
+                    >
+                      <strong>Referenzen</strong>
+                    </MDBNavLink>
+                  )}
+                </MDBNavItem>
+                <MDBNavItem>
+                  <a
+                    href="mailto:office@inspiremedia.at"
+                    className="text-dark p-2"
                   >
-                    <strong>Login</strong>
-                  </MDBNavLink>
+                    <strong>Kontakt</strong>
+                  </a>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>
@@ -96,10 +137,10 @@ class Navbar extends React.Component {
 //#endregion
 
 //#region > Exports
-export default Navbar;
+export default withRouter(Navbar);
 //#endregion
 
 /**
  * SPDX-License-Identifier: (EUPL-1.2)
- * Copyright © 2020 Werbeagentur Christian Aichner
+ * Copyright © 2020 InspireMedia GmbH
  */
