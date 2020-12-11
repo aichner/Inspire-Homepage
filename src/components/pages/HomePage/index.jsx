@@ -39,7 +39,7 @@ import {
   Hero,
   Reviews,
   References,
-  Examples,
+  //Examples,
   Services,
 } from "../../organisms/sections";
 //#endregion
@@ -56,7 +56,7 @@ class HomePage extends React.Component {
           <CallToAction />
         </ParallaxProvider>
         <Reviews />
-        <Examples />
+        {/*<Examples />*/}
       </>
     );
   }

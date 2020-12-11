@@ -22,6 +22,8 @@ import psvIMG from "../../../../assets/content/trusted/psv.png";
 import e4yIMG from "../../../../assets/content/trusted/e4y.png";
 import sithcultIMG from "../../../../assets/content/trusted/sithcult.png";
 import healthtraceIMG from "../../../../assets/content/trusted/healthtrace.png";
+import topImmoIMG from "../../../../assets/content/trusted/topimmo.png";
+import spardaIMG from "../../../../assets/content/trusted/sparda.png";
 
 //> Data
 const data = [
@@ -37,6 +39,8 @@ const data = [
   { src: bluelupiIMG, alt: "Blue Lupi" },
   { src: sithcultIMG, alt: "SithCult" },
   { src: healthtraceIMG, alt: "HealthTrace" },
+  { src: topImmoIMG, alt: "Top Immo"},
+  { src: spardaIMG, alt: "Sparda Plus Versicherungen"}
 ];
 
 class References extends React.PureComponent {
