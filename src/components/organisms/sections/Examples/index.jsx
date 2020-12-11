@@ -44,6 +44,8 @@ import healthtraceIMG from "../../../../assets/content/trusted/healthtrace.png";
 import healthtraceEx from "../../../../assets/content/examples/healthtrace.jpg";
 import runeIMG from "../../../../assets/content/trusted/rune.png";
 import runeEx from "../../../../assets/content/examples/rune.jpg";
+import spardaIMG from "../../../../assets/content/trusted/sparda.png";
+import spardaEx from "../../../../assets/content/examples/sparda.png";
 //#endregion
 
 //#region > Config
@@ -150,14 +152,13 @@ const data = [
     ],
   },
   {
-    title: "Sonnenarm",
-    url: "https://www.sonnenarm.at",
-    openSource: "https://github.com/aichner/sonnenarm-homepage",
+    title: "SPARDA",
+    url: "https://www.spardaplus.at",
     type: "web",
-    logo: runeIMG,
-    head: runeEx,
-    description: "Digitale Kunstgalerie",
-    technologies: ["react", "javascript", "css", "sass", "html"],
+    logo: spardaIMG,
+    head: spardaEx,
+    description: "Website und CMS",
+    technologies: ["wordpress", "css", "html"],
   },
 ];
 //#endregion

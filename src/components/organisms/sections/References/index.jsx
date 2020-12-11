@@ -27,8 +27,12 @@ import spardaIMG from "../../../../assets/content/trusted/sparda.png";
 
 //> Data
 const data = [
-  { src: pharmaziegasseIMG, alt: "Pharmaziegasse Logo" },
-  { src: snekIMG, alt: "SNEK" },
+  {
+    src: pharmaziegasseIMG,
+    alt: "Pharmaziegasse Logo",
+    url: "https://www.pharmaziegasse.at/",
+  },
+  { src: snekIMG, alt: "SNEK", url: "https://snek.at/" },
   { src: gasserPartnerIMG, alt: "Gasser+Partner" },
   { src: kelagbigbandIMG, alt: "KELAG BigBand" },
   { src: e4yIMG, alt: "Emotions 4 You" },
@@ -36,11 +40,19 @@ const data = [
   { src: psvIMG, alt: "Polizeisportverein" },
   { src: rauchIMG, alt: "Andreas Rauch" },
   { src: kelagIMG, alt: "KELAG" },
-  { src: bluelupiIMG, alt: "Blue Lupi" },
-  { src: sithcultIMG, alt: "SithCult" },
-  { src: healthtraceIMG, alt: "HealthTrace" },
-  { src: topImmoIMG, alt: "Top Immo"},
-  { src: spardaIMG, alt: "Sparda Plus Versicherungen"}
+  { src: bluelupiIMG, alt: "Blue Lupi", url: "https://www.kaffeerudel.at/" },
+  { src: sithcultIMG, alt: "SithCult", url: "https://sithcult.com/" },
+  {
+    src: healthtraceIMG,
+    alt: "HealthTrace",
+    url: "https://www.healthtrace.at/",
+  },
+  { src: topImmoIMG, alt: "Top Immo", url: "https://www.top-immo.org/" },
+  {
+    src: spardaIMG,
+    alt: "Sparda Plus Versicherungen",
+    url: "https://www.spardaplus.at/",
+  },
 ];
 
 class References extends React.PureComponent {
@@ -59,7 +71,17 @@ class References extends React.PureComponent {
             {data.map((item, i) => {
               return (
                 <MDBCol xs="6" sm="6" md="3" lg="2" className="p-3" key={i}>
-                  <img src={item.src} alt={item.alt} className="img-fluid" />
+                  {item.url ? (
+                    <a href={item.url} target="_blank">
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        className="img-fluid"
+                      />
+                    </a>
+                  ) : (
+                    <img src={item.src} alt={item.alt} className="img-fluid" />
+                  )}
                 </MDBCol>
               );
             })}
